@@ -145,7 +145,7 @@ const LocateNearestHospitalMyLoc = () => {
       //populateTableData(dist);
       if (hospitalDataList[i].SpecialitiesAvailable.includes(dept)) {
         let validHospTemp = validHospital;
-        hospitalDataList[i].distance = dist;
+        hospitalDataList[i].distance = Math.round(dist);
         validHospTemp.push(hospitalDataList[i]);
         setValidHospital(validHospTemp);
         console.log(validHospital, "validHospital");
